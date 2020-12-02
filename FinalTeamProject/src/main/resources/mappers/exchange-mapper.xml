@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="Exchange">
+	<insert id="insertExchange">
+		insert into EXCHANGE (want, have, name, contact, email, message, password) values
+		(#{want} , #{have} , #{name} , #{contact}, #{email}, #{message}, #{password})
+	</insert>
+	<update id="updateExchange">
+		update EXCHANGE
+		set want=#{want}, have=#{have}, name=#{name}, email=#{email}, message=#{message}, 
+		password=#{password} where rid=#{rid}
+	</update>
+	<delete id="deleteExchange">
+		delete from EXCHANGE where rid=#{rid}
+	</delete>
+	<select id="getExchange" resultType="exchange">
+		select * from EXCHANGE where rid=#{rid}
+	</select>
+	<select id="getExchangeList" resultType="exchange">
+		select * from EXCHANGE order by rid desc
+	</select>
+</mapper>
