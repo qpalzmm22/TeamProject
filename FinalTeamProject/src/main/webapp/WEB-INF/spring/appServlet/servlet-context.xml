@@ -23,6 +23,15 @@
 	
 	<context:component-scan base-package="com.sugang.exchange" />
 	
+	<beans:bean id="VerifyCheckInterceptor" class="com.sugang.exchange.VerifyCheckInterceptor">
+	</beans:bean>
+	
+	<interceptors>
+		<interceptor>
+			<mapping path="/editform/**"/>
+			<beans:ref bean="VerifyCheckInterceptor"/>
+		</interceptor>
+	</interceptors>
 	
 	
 </beans:beans>

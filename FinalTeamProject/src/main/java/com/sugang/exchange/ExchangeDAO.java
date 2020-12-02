@@ -34,6 +34,6 @@ public class ExchangeDAO {
 	}
 	
 	public ExchangeVO verifyUser(ExchangeVO vo) {
-		return sqlSession.selectOne("User.getUser", vo);
+		return sqlSession.selectOne("Exchange.tryToGetExchange", vo);
 	}
 }

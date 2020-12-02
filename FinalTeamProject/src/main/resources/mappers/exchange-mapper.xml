@@ -19,4 +19,9 @@
 	<select id="getExchangeList" resultType="exchange">
 		select * from EXCHANGE order by rid desc
 	</select>
+	
+	<select id="tryToGetExchange" resultType="exchange">
+		select * from EXCHANGE
+  		where rid=#{rid} and password=#{password}
+	</select>
 </mapper>

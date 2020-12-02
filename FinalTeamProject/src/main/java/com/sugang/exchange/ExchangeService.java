@@ -8,4 +8,5 @@ public interface ExchangeService {
 	public int updateExchange(ExchangeVO vo);
 	public ExchangeVO getExchange(int rid);
 	public List<ExchangeVO> getExchangeList();
+	public ExchangeVO verifyExchange(ExchangeVO vo);
 }

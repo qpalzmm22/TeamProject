@@ -36,6 +36,11 @@ public class ExchangeServiceImpl implements ExchangeService{
 	public List<ExchangeVO> getExchangeList() {
 		return exchangeDAO.getExchangeList();
 	}
+
+	@Override
+	public ExchangeVO verifyExchange(ExchangeVO vo) {
+		return exchangeDAO.verifyUser(vo);
+	}
 	
 
 }

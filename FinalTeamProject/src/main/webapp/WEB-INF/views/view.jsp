@@ -15,6 +15,6 @@
 	email : ${u.email} </br>
 	message : ${u.message}</br>
 	<a href="../">See the List</a>
-	<a href="verify/${u.rid}">Edit</a>
+	<a href="../verify/${u.rid}">Edit</a>
 </body>
 </html>
