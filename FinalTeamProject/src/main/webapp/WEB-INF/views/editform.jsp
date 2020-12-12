@@ -51,7 +51,7 @@ table {
 </head>
 <body>
 
-	<h1>${u.name}님의수강 교환 신청 편집</h1>
+	<h1>${u.name}님의수강교환신청편집</h1>
 	<form method="POST" action="../editok">
 		<input type="hidden" name="rid" value="${u.rid}" />
 		<table>
@@ -77,8 +77,7 @@ table {
 			</tr>
 			<tr>
 				<td>Password :</td>
-				<td><input type="text" name="password"
-					value="${u.password}" /></td>
+				<td><input type="text" name="password" value="${u.password}" /></td>
 			</tr>
 			<tr>
 				<td>Message [비고] :</td>
@@ -87,8 +86,11 @@ table {
 			<tr>
 				<td><button type="button" onclick="history.back()"
 						class="btn btn-outline-dark">취소</button></td>
+				<td><button type="button" onclick= "location.href ='../deleteok/${u.rid}'"
+						class="btn btn-outline-danger">삭제</button></td>
 				<td align="right"><input type="submit" value="편집 완료"
 					class="btn btn-outline-success" /></td>
+
 			</tr>
 		</table>
 	</form>
