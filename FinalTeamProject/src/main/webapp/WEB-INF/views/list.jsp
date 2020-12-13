@@ -23,6 +23,8 @@
 	<!-- JavaScript Bundle with Popper -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
 
+</script>
+
 <style>
 @import url(//fonts.googleapis.com/earlyaccess/hanna.css);
 
@@ -30,7 +32,7 @@ h1 {
 	font-family: 'Hanna', sans-serif;
 	border-collapse: collapse;
 	width: 100%;
-	text-align: center;
+	
 	margin-right: 50px;
 	margin-bottom: 50px;
 }
@@ -43,10 +45,25 @@ table, button {
 table{
 	font-size : 15px;
 }
+
+.linkToHome{
+	text-decoration: none;
+	display:block;
+	margin: 10 auto;
+	text-align: center;
+	}
 </style>
 </head>
 <body>
-	<h1>홈 게시판</h1>
+	<a href ="list" class="h1 linkToHome">홈 게시판</a>
+	
+	<form method="GET" action="list">
+	    검색 : <input type="text" name="keyword" size="50" required />
+	    &nbsp;
+	    <input type="submit" value="Searcj" />
+	    &nbsp;
+	</form>
+
 	<table id="list" width="90%" class="table table-hover table-borderless">
 		<thead class="thead-light">
 			<tr>

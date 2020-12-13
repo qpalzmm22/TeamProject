@@ -33,8 +33,12 @@ public class ExchangeServiceImpl implements ExchangeService{
 	}
 
 	@Override
-	public List<ExchangeVO> getExchangeList() {
-		return exchangeDAO.getExchangeList();
+	public List<ExchangeVO> getExchangeList(String keyword) {
+		if (keyword != null) {
+			System.out.println("service : " + keyword + " passed well");
+            return exchangeDAO.getSearchList(keyword);
+        }
+        return exchangeDAO.getExchangeList();
 	}
 
 	@Override

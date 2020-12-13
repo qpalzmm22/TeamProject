@@ -1,7 +1,10 @@
 package com.sugang.exchange;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -17,8 +20,11 @@ public class ExchangeController {
 	ExchangeService exchangeService;
 
 	@RequestMapping(value = "/list", method = RequestMethod.GET)
-	public String exchangeList(Model model) {
-		model.addAttribute("list", exchangeService.getExchangeList());
+	public String exchangeList(Model model, @Param(value = "keyword") String keyword) {
+		System.out.println(keyword + "passed well");
+		List<ExchangeVO> listProducts = exchangeService.getExchangeList(keyword);
+		model.addAttribute("list", listProducts);
+		model.addAttribute("keyword", keyword);
 		return "list";
 	}
 

@@ -61,27 +61,27 @@ button{
 			<td>${u.rid}</td>
 		</tr>
 		<tr>
-			<td>Want [과목명, 과목코드] :</td>
+			<td>Want [과목명, 과목코드] : </td>
 			<td>${u.want}</td>
 		</tr>
 		<tr>
-			<td>Have [과목명, 과목코드] :</td>
+			<td>Have [과목명, 과목코드] : </td>
 			<td>${u.have}</td>
 		</tr>
 		<tr>
-			<td>Name [이름, 학번] :</td>
+			<td>Name [이름, 학번] : </td>
 			<td>${u.name}</td>
 		</tr>
 		<tr>
-			<td>Contact [연락처] :</td>
+			<td>Contact [연락처] : </td>
 			<td>${u.contact}</td>
 		</tr>
 		<tr>
-			<td>Email :</td>
+			<td>Email : </td>
 			<td>${u.email}</td>
 		</tr>
 		<tr>
-			<td>Message [비고] :</td>
+			<td>Message [비고] : </td>
 			<td>${u.message}</td>
 		</tr>
 

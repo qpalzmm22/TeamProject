@@ -36,4 +36,10 @@ public class ExchangeDAO {
 	public ExchangeVO verifyUser(ExchangeVO vo) {
 		return sqlSession.selectOne("Exchange.tryToGetExchange", vo);
 	}
+	public List<ExchangeVO> getSearchList(String keyword) {
+		System.out.println("DAO : " + keyword + " passed well");
+		List<ExchangeVO> list = sqlSession.selectList("Exchange.getSearchList", keyword);
+		System.out.println("SQL well passed");
+		return list;
+	}
 }

@@ -20,8 +20,14 @@
 		select * from EXCHANGE order by rid desc
 	</select>
 	
+	<!-- SQL To check if it's valid -->
 	<select id="tryToGetExchange" resultType="exchange">
 		select * from EXCHANGE
   		where rid=#{rid} and password=#{password}
+	</select>
+	
+	<!-- SQL for select-->
+	<select id="getSearchList" resultType="exchange" parameterType="string">
+		select * from EXCHANGE  where CONCAT(want, have, message) LIKE CONCAT('%', #{keyword},'%')
 	</select>
 </mapper>

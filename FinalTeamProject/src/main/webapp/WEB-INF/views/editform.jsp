@@ -56,32 +56,32 @@ table {
 		<input type="hidden" name="rid" value="${u.rid}" />
 		<table>
 			<tr>
-				<td>Want [과목명, 과목코드] :</td>
+				<td>Want [과목명, 과목코드] : </td>
 				<td><input type="text" name="want" value="${u.want}" /></td>
 			</tr>
 			<tr>
-				<td>Have [과목명, 과목코드] :</td>
+				<td>Have [과목명, 과목코드] : </td>
 				<td><input type="text" name="have" value="${u.have}" /></td>
 			</tr>
 			<tr>
-				<td>Name [이름, 학번] :</td>
+				<td>Name [이름, 학번] : </td>
 				<td><input type="text" name="name" value="${u.name}" /></td>
 			</tr>
 			<tr>
-				<td>Contact [연락처] :</td>
+				<td>Contact [연락처] : </td>
 				<td><input type="text" name="contact" value="${u.contact}" /></td>
 			</tr>
 			<tr>
-				<td>Email :</td>
+				<td>Email : </td>
 				<td><input type="text" name="email" value="${u.email}" /></td>
 			</tr>
 			<tr>
-				<td>Password :</td>
+				<td>Password : </td>
 				<td><input type="text" name="password"
 					value="${u.password}" /></td>
 			</tr>
 			<tr>
-				<td>Message [비고] :</td>
+				<td>Message [비고] : </td>
 				<td><textarea cols="50" rows="5" name="message">${u.message}</textarea></td>
 			</tr>
 			<tr>

@@ -7,6 +7,7 @@ public interface ExchangeService {
 	public int deleteExchange(int rid);
 	public int updateExchange(ExchangeVO vo);
 	public ExchangeVO getExchange(int rid);
-	public List<ExchangeVO> getExchangeList();
+	public List<ExchangeVO> getExchangeList(String keyword);
 	public ExchangeVO verifyExchange(ExchangeVO vo);
+	
 }

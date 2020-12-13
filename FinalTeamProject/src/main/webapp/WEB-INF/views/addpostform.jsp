@@ -44,7 +44,6 @@ table, button {
 table {
 	font-size: 15px;
 }
-
 </style>
 </head>
 <body>
@@ -53,22 +52,22 @@ table {
 	<form action="addok" method="post">
 		<table>
 			<tr>
-				<td>Want [과목명, 과목코드] :</td>
+				<td>Want [과목명, 과목코드] : </td>
 				<td> <td/>
 				<td><input type="text" name="want" class="form-control" placeholder="ICT 응용 입문, GCS10002"/></td>
 			</tr>
 			<tr>
-				<td>Have [과목명, 과목코드] :</td>
+				<td>Have [과목명, 과목코드] : </td>
 				<td> <td/>
 				<td><input type="text" name="have" class="form-control" placeholder="소프트웨어 입문, GCS10001"/></td>
 			</tr>
 			<tr>
-				<td>Name [이름, 학번] :</td>
+				<td>Name [이름, 학번] : </td>
 				<td> <td/>
 				<td><input type="text" name="name" class="form-control" placeholder="홍길동, 22000000"/></td>
 			</tr>
 			<tr>
-				<td>Contact [연락처] :</td>
+				<td>Contact [연락처] : </td>
 				<td> <td/>
 				<td><input type="text" name="contact" class="form-control" placeholder="010-0000-0000 혹은 카카오톡 채팅방 링크 등"/></td>
 			</tr>
@@ -78,12 +77,12 @@ table {
 				<td><input type="text" name="email" class="form-control" placeholder="22000000@handong.edu"/></td>
 			</tr>
 			<tr>
-				<td>Message [비고] :</td>
+				<td>Message [비고] : </td>
 				<td> <td/>
 				<td><textarea cols="50" rows="5" name="message" class="form-control" placeholder="이것만은 꼭 지켜주세요!"></textarea></td>
 			</tr>
 			<tr>
-				<td>Password :</td>
+				<td>Password : </td>
 				<td> <td/>
 				<td><input type="text" name="password" class="form-control" placeholder="Password"/></td>
 			</tr>

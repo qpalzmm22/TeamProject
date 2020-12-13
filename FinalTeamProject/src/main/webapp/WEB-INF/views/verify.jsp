@@ -73,19 +73,19 @@ button {
 			<h5>편집하시려면 등록하셨을 때 입력한 비밀번호를 입력하세요</h5>
 			<table>
 				<tr>
-					<td>Want [과목명, 과목코드] :</td>
+					<td>Want [과목명, 과목코드] : </td>
 					<td>${u.want}</td>
 				</tr>
 				<tr>
-					<td>Have [과목명, 과목코드] :</td>
+					<td>Have [과목명, 과목코드] : </td>
 					<td>${u.have}</td>
 				</tr>
 				<tr>
-					<td>Name [이름, 학번] :</td>
+					<td>Name [이름, 학번] : </td>
 					<td>${u.name}</td>
 				</tr>
 				<tr>
-					<td>Password :</td>
+					<td>Password : </td>
 					<td><input type="password" name="password"></td>
 				</tr>
 			</table>
